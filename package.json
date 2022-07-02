@@ -2,6 +2,7 @@
   "name": "vulcan-fhir-to-omop",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/vulcan-fhir-to-omop/",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
