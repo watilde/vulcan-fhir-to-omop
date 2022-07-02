@@ -1,0 +1,14 @@
+{
+  "Patient.identifier": [
+    "person.person_id",
+    "person.person_source_value"
+  ],
+  "Patient.gender": "person.gender_concept_id",
+  "Patient.birthDate": [
+    "person.year_of_birth",
+    "person.day_of_birth",
+    "person.month_of_birth"
+  ],
+  "Patient.address": "person.location_id",
+  "Patient.generalPractitioner": "person.provider_id"
+}

@@ -1,0 +1,4 @@
+Patient.identifier,Patient.active,Patient.name,Patient.telecom,Patient.gender,Patient.birthDate,Patient.deceased.deceasedBoolean,Patient.deceased.deceasedDateTime,Patient.address,Patient.maritalStatus,Patient.multipleBirthBoolean,Patient.multipleBirthInteger,Patient.photo,Patient.contact.relationship,Patient.contact.name,Patient.contact.telecom,Patient.contact.address,Patient.contact.gender,Patient.contact.organization,Patient.contact.period,Patient.communication.language,Patient.communication.preferred,Patient.generalPractitioner,Patient.managingOrganization,Patient.link.other,Patient.link.type
+person.person_id,,,,person.gender_concept_id,person.year_of_birth,,,person.location_id,,,,,,,,,,,,,,person.provider_id,,,
+person.person_source_value,,,,,person.day_of_birth,,,,,,,,,,,,,,,,,,,,
+,,,,,person.month_of_birth,,,,,,,,,,,,,,,,,,,,
