@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "node scripts/csv2json.js",
+    "prebuild": "rm -rf docs && node scripts/csv2json.js",
     "build": "react-scripts build",
     "postbuild": "mv build docs",
     "test": "react-scripts test",
