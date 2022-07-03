@@ -19,7 +19,13 @@ function App() {
   const handleConvert = () => {
     const out = {};
     for (const key in MAP_DATA) {
-      out[MAP_DATA[key]] = fhirpath.evaluate(JSON.parse(data), key);
+      if (Array.isArray(MAP_DATA[key])) {
+        (MAP_DATA[key]).forEach((item) => {
+          out[item] = fhirpath.evaluate(JSON.parse(data), key);
+        });
+      } else {
+        out[MAP_DATA[key]] = fhirpath.evaluate(JSON.parse(data), key);
+      }
     }
     setOut(JSON.stringify(out, null, 2));
   };
