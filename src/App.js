@@ -53,7 +53,7 @@ function App() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Container>
+      <Container maxWidth='xl'>
         <Box mb={2} />
         <Grid container spacing={2}>
           <Grid item xs={5}>
