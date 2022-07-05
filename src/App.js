@@ -11,7 +11,7 @@ import {
  } from '@mui/material';
 import fhirpath from "fhirpath";
 import DEMO_DATA from "./data/example.json";
-import MAP_DATA from "./mapping/R4Bto5.4.json"
+import MAP_DATA from "./mapping/Patient.json"
 
 function keyPlacer (key, value, obj) {
   if (key.includes('.')) {
