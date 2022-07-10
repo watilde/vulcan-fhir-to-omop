@@ -44,6 +44,9 @@ function App() {
   const handleInput = (e) => {
     setData(e.target.value);
   }
+  const handleOut = (e) => {
+    setOut(e.target.value);
+  }
   return (
     <>
       <AppBar position="static">
@@ -73,6 +76,7 @@ function App() {
             <TextField
                 multiline
                 value={out}
+                onChange={handleOut}
                 fullWidth
               />
           </Grid>
