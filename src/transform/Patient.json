@@ -9,6 +9,22 @@
       "option": "value"
     }
   ],
+  "person.person_source_value": [
+    {
+      "method": "extract",
+      "option": 0
+    },
+    {
+      "method": "extract",
+      "option": "system"
+    }
+  ],
+  "person.gender_concept_id": [
+    {
+      "method": "extract",
+      "option": 0
+    }
+  ],
   "person.year_of_birth": [
     {
       "method": "extract",
@@ -49,6 +65,16 @@
     {
       "method": "extract",
       "option": 2
+    }
+  ],
+  "person.location_id": [
+    {
+      "method": "extract",
+      "option": 0
+    },
+    {
+      "method": "extract",
+      "option": "postalCode"
     }
   ]
 }
