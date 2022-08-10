@@ -12,6 +12,7 @@ import {
 import fhirpath from "fhirpath";
 import DEMO_DATA from "./data/example.json";
 import MAP_DATA from "./mapping/Patient.json"
+import TRANSFORM_DATA from "./transform/Patient.json"
 
 function keyPlacer (key, value, obj) {
   if (key.includes('.')) {
@@ -37,6 +38,20 @@ function App() {
         });
       } else {
         keyPlacer(MAP_DATA[key], fhirpath.evaluate(JSON.parse(data), key), out);
+      }
+    }
+    for (const entity in out) {
+      for (const item in out[entity]) {
+        const transforms = TRANSFORM_DATA[`${entity}.${item}`]
+        if (!transforms) continue;
+        transforms.forEach((transform) => {
+          const { method, option } = transform
+          if (method === 'extract') {
+            out[entity][item] = out[entity][item][option]
+          } else if (method === 'split') {
+            out[entity][item] = (out[entity][item]).split(option)
+          }
+        })
       }
     }
     setOut(JSON.stringify(out, null, 2));

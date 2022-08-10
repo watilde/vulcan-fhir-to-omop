@@ -1,0 +1,54 @@
+{
+  "person.person_id": [
+    {
+      "method": "extract",
+      "option": 0
+    },
+    {
+      "method": "extract",
+      "option": "value"
+    }
+  ],
+  "person.year_of_birth": [
+    {
+      "method": "extract",
+      "option": 0
+    },
+    {
+      "method": "split",
+      "option": "-"
+    },
+    {
+      "method": "extract",
+      "option": 0
+    }
+  ],
+  "person.month_of_birth": [
+    {
+      "method": "extract",
+      "option": 0
+    },
+    {
+      "method": "split",
+      "option": "-"
+    },
+    {
+      "method": "extract",
+      "option": 1
+    }
+  ],
+  "person.day_of_birth": [
+    {
+      "method": "extract",
+      "option": 0
+    },
+    {
+      "method": "split",
+      "option": "-"
+    },
+    {
+      "method": "extract",
+      "option": 2
+    }
+  ]
+}
